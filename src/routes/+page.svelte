@@ -50,10 +50,10 @@
         <p>Бэкенд разработчик</p>
         <div>
             {#each content.socials as { link, title }}
-                <a href={link} class="mr-2 last:mr-0">{title}</a>
+                <a href={link} class="mr-6 last:mr-0">{title}</a>
             {/each}
         </div>
-        <p class="font-bold text-lg mt-2">Теги</p>
+        <p class="font-bold text-lg mt-2 mb-1">Теги</p>
         <div class="grid min-sm:grid-cols-4">
             {#each tags as { name, count }, i}
                 <input
