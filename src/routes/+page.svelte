@@ -54,7 +54,7 @@
             {/each}
         </div>
         <p class="font-bold text-lg mt-2 mb-1">Теги</p>
-        <div class="grid min-sm:grid-cols-4">
+        <div class="grid grid-cols-4 max-sm:grid-cols-2">
             {#each tags as { name, count }, i}
                 <input
                     type="button"
@@ -93,7 +93,7 @@
                                 <div>
                                     {#each entryTags as tag, i}
                                         {#if i > 0}
-                                            ⋅
+                                            {" ⋅ "}
                                         {/if}
                                         {#if isTagSelected(tag)}
                                             <b>{tag}</b>
