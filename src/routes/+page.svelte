@@ -42,9 +42,9 @@
 <div class="flex justify-center text-gray-900">
     <div class="flex flex-col items-center pt-10 pb-10 pl-6 pr-6 w-2xl">
         <img
-            src="avatar.jpg"
+            src="avatar.png"
             alt="аватар"
-            class="w-24 rounded-full border-gray-900 shadow-lg shadow-blue-300"
+            class="w-32 rounded-sm border-gray-900 shadow-lg shadow-blue-300"
         />
         <p class="font-bold mt-2 text-lg">Артём Белоусов</p>
         <p>Бэкенд разработчик</p>
