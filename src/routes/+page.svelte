@@ -59,7 +59,7 @@
                 <input
                     type="button"
                     value="{name} ({count})"
-                    class={"col-span-1 ml-4 pl-2 pr-2 text-blue-900 cursor-pointer text-left " +
+                    class={"col-span-1 ml-4 text-blue-900 cursor-pointer text-left " +
                         (selectedTags[i] ? " font-bold" : "")}
                     onclick={() => (selectedTags[i] = !selectedTags[i])}
                 />
