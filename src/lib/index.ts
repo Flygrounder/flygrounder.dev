@@ -1,25 +1,25 @@
 type Content = {
-  socials: Social[],
-  sections: Section[],
-}
+  socials: Social[];
+  sections: Section[];
+};
 
 type Social = {
-  title: string,
-  link: string,
-}
+  title: string;
+  link: string;
+};
 
 type Section = {
-  title: string,
-  entries: Entry[],
-}
+  title: string;
+  entries: Entry[];
+};
 
 type Entry = {
-  title: String,
-  points: string[],
-  period?: string,
-  tags?: string[],
-  image: string,
-}
+  title: String;
+  points: string[];
+  period?: string;
+  tags?: string[];
+  image: string;
+};
 
 export const content: Content = {
   socials: [
@@ -49,7 +49,7 @@ export const content: Content = {
           tags: ["Бэкенд", "Go"],
           points: [
             "Реализовал API на языке Go для управления ZFS снимками реплики базы данных MySQL и создания тестового окружения с определённого снимка с возможностью настройки репликации на других хостах.",
-            "При работе над бэкендом, обнаружил <a href=\"https://github.com/roadrunner-server/roadrunner/issues/772\">баг</a> связанный с многопоточностью в библиотеке RoadRunner, приводивший к периодическому зависанию запросов, научился воспроизводить, нашёл причину и сообщил о проблеме разработчику. На основе предоставленной мной информации, разработчик библиотеки исправил проблему.",
+            'При работе над бэкендом, обнаружил <a href="https://github.com/roadrunner-server/roadrunner/issues/772">баг</a> связанный с многопоточностью в библиотеке RoadRunner, приводивший к периодическому зависанию запросов, научился воспроизводить, нашёл причину и сообщил о проблеме разработчику. На основе предоставленной мной информации, разработчик библиотеки исправил проблему.',
           ],
         },
       ],
@@ -77,7 +77,7 @@ export const content: Content = {
             'Поступил в бакалавриат на специальность "Прикладная математика и информатика", кафедра <a href=\"https://iu9.bmstu.ru/\">ИУ9</a>.',
             'Больше всего понравились курсы "Базы данных", "Генерация оптимального кода", "Теория формальных языков".',
             'Защитил выпускную квалификационную работу на тему "Ускорение поиска плагиата на сервере тестирования"',
-            "Получил дипломом с отличием.",
+            "Получил диплом с отличием.",
           ],
         },
       ],
@@ -120,5 +120,5 @@ export const content: Content = {
         },
       ],
     },
-  ]
-}
+  ],
+};
