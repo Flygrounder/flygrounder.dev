@@ -1,9 +1,9 @@
-FROM node:23-alpine3.21 AS builder
+FROM golang:1.24.4-alpine3.22 AS build
 WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm i
+RUN apk add --no-cache npm
 COPY . .
-RUN npm run build
+RUN npx @tailwindcss/cli -i ./input.css -o ./static/output.css
+RUN go run main.go > static/index.html
 
-FROM caddy:2.9.1-alpine
-COPY --from=builder /app/build /usr/share/caddy
+FROM caddy:2.10.0-alpine
+COPY --from=build /app/static/ /usr/share/caddy/
