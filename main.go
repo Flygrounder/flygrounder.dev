@@ -34,7 +34,7 @@ type entry struct {
 //go:embed content.json
 var pageContentBytes []byte
 
-//go:embed page.html
+//go:embed page.tmpl
 var pageTemplate string
 
 func main() {
